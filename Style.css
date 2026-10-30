@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #10264d;
+    background: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    border-bottom: 1px solid #eeeeee;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #1764e8;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #202b3e;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #1764e8;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.login {
+    background: white;
+    color: #172b4d;
+}
+
+.register,
+.search-btn {
+    background: #1764e8;
+    color: white;
+}
+
+.hero {
+    background: #f0f7ff;
+    padding: 60px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-text {
+    flex: 1.2;
+}
+
+.badge {
+    display: inline-block;
+    background: #e0edff;
+    color: #1764e8;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.blue {
+    color: #1764e8;
+}
+
+.hero p {
+    color: #66758a;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #dce7f5;
+    gap: 8px;
+}
+
+.search-box input,
+.search-box select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-btn {
+    white-space: nowrap;
+}
+
+.popular {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.popular span {
+    color: #1764e8;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 0.8;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.jobs {
+    padding: 35px 5%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #758196;
+    font-size: 14px;
+}
+
+.section-heading a {
+    text-decoration: none;
+    color: #1764e8;
+}
+
+.job-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.job-card {
+    border: 1px solid #e9edf3;
+    padding: 22px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #e1eaf7;
+}
+
+.company-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 12px;
+    color: white;
+    background: #1764e8;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.purple {
+    background: #7137d8;
+}
+
+.pink {
+    background: #e83e70;
+}
+
+.green {
+    background: #16a56b;
+}
+
+.company {
+    display: inline-block;
+    margin-left: 8px;
+    color: #6b778b;
+    font-size: 12px;
+}
+
+.job-card h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.details {
+    font-size: 12px;
+    color: #718096;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.tag {
+    display: inline-block;
+    background: #dff8eb;
+    color: #138b55;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.contract {
+    background: #eee7ff;
+    color: #7044c6;
+}
+
+.salary {
+    font-size: 12px;
+    font-weight: bold;
+    color: #35435b;
+}
+
+.job-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow {
+    color: #1764e8;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.features {
+    background: #f6faff;
+    padding: 35px 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1.3fr;
+    gap: 20px;
+}
+
+.feature {
+    padding: 12px;
+    border-right: 1px solid #e4eaf3;
+}
+
+.feature-icon {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.feature h3,
+.newsletter h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.feature p,
+.newsletter p {
+    color: #748197;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.newsletter {
+    background: #e7f0ff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.newsletter button {
+    background: #1764e8;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #718096;
+    font-size: 13px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    .job-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
+
+/* Mobile phone */
+@media (max-width: 650px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 35px 5%;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-btn {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .popular span {
+        display: inline-block;
+        margin: 8px 8px 0 0;
+    }
+
+    .job-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature {
+        border-right: none;
+    }
+
+    .newsletter {
+        grid-column: 1 / -1;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
+    }
+}
+
+
+
